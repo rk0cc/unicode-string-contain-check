@@ -1,4 +1,5 @@
 language: python
+os: linux
 dist: focal
 python:
   - "3.8"
@@ -7,7 +8,6 @@ python:
   - "nightly"
 arch:
   - "amd64"
-  - "arm64"
   - "arm64-graviton2"
 virtualenv:
   system_site_packages: false
