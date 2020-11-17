@@ -5,7 +5,7 @@ with open("README.md", "r") as readme_file:
 
 setuptools.setup(
     name="UnicodeStringContainCheck",
-    version="1.0.0",
+    version="1.0.1",
     author="rk0cc",
     author_email="cyruschan1212@gmail.com",
     description="String contain validation for non-Latin language system",
