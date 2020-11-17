@@ -8,6 +8,7 @@ python:
 arch:
   - "amd64"
   - "arm64"
+  - "arm64-graviton2"
 virtualenv:
   system_site_packages: false
 script:
