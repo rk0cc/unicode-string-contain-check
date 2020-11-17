@@ -11,7 +11,7 @@ This python package is performing `in` with UTF-8 encoded to support non-Latin c
 
 <br>
 
-It should be fine for other language, otherwise, please create new issue to solving problem
+It should be fine for other language, otherwise, please create new issue to solve the problem
 
 <hr>
 
