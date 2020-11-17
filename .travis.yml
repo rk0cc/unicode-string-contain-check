@@ -3,7 +3,12 @@ dist: focal
 python:
   - "3.8"
   - "3.9"
+  - "3.9-dev"
+  - "nightly"
+arch:
+  - "amd64"
+  - "arm64"
 virtualenv:
   system_site_packages: false
 script:
-  - python3 -m unittest tests/test_contain.py || python -m unittest tests/test_contain.py
+  - python3 -m unittest -v tests/test_contain.py || python -m unittest -v tests/test_contain.py
