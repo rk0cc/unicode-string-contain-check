@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_desc,
     long_description_content_type="text/markdown",
     url="https://github.com/rk0cc/unicode-string-contain-check",
-    package=setuptools.find_packages(),
+    package=setuptools.find_packages(include=['UnicodeStringContainCheck','UnicodeStringContainCheck.*']),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
