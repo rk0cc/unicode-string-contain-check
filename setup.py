@@ -5,14 +5,14 @@ with open("README.md", "r") as readme_file:
 
 setuptools.setup(
     name="UnicodeStringContainCheck",
-    version="1.0.1",
+    version="1.0.2",
     author="rk0cc",
     author_email="cyruschan1212@gmail.com",
     description="String contain validation for non-Latin language system",
     long_description=long_desc,
     long_description_content_type="text/markdown",
     url="https://github.com/rk0cc/unicode-string-contain-check",
-    package=setuptools.find_packages(include=['UnicodeStringContainCheck','UnicodeStringContainCheck.*']),
+    package=setuptools.find_packages(include=("UnicodeStringContainCheck")),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
@@ -20,4 +20,5 @@ setuptools.setup(
         "Topic :: Text Processing",
     ],
     python_requires=">=3.8",
+    include_package_data=True
 )
