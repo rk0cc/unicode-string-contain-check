@@ -11,7 +11,7 @@ class TestContain(unittest.TestCase):
         '''
         test_target_word = "測試"
         test_phrase = "執行蟒蛇測試程式"
-        self.assertTrue(uin.contain(test_phrase, test_target_word))
+        self.assertTrue(uin.utf_contain(test_phrase, test_target_word))
 
     def test_iscontainsc(self):
         '''
@@ -20,7 +20,7 @@ class TestContain(unittest.TestCase):
         '''
         test_target_word = "语言"
         test_phrase = "同一语言有不同文字表达"
-        self.assertTrue(uin.contain(test_phrase, test_target_word))
+        self.assertTrue(uin.utf_contain(test_phrase, test_target_word))
 
     def test_iscontainjp(self):
         '''
@@ -29,7 +29,7 @@ class TestContain(unittest.TestCase):
         '''
         test_target_word = "べません"  # I just pick randomly which may not a valid word
         test_phrase = "生鮭は食べません"
-        self.assertTrue(uin.contain(test_phrase, test_target_word))
+        self.assertTrue(uin.utf_contain(test_phrase, test_target_word))
 
     def test_iscontainkr(self):
         '''
@@ -38,7 +38,7 @@ class TestContain(unittest.TestCase):
         '''
         test_target_word = "피클"
         test_phrase = "김치는 피클에서 나온 부분이에요"
-        self.assertTrue(uin.contain(test_phrase, test_target_word))
+        self.assertTrue(uin.utf_contain(test_phrase, test_target_word))
 
     def test_isnotcontain(self):
         '''
@@ -47,7 +47,7 @@ class TestContain(unittest.TestCase):
         '''
         test_target_word = "試咪"
         test_phrase = "執行蟒蛇測試程式"
-        self.assertFalse(uin.contain(test_phrase, test_target_word))
+        self.assertFalse(uin.utf_contain(test_phrase, test_target_word))
 
     def test_nonsensecompare(self):
         '''
@@ -57,7 +57,7 @@ class TestContain(unittest.TestCase):
         with self.assertRaises(IndexError) as nonsense_test:
             test_target_word = "閔民旻閔民旻閔民旻閔民旻閔民旻閔民旻閔民旻閔民旻閔民旻閔民旻"  # Seem ridiculous but truly invalid
             test_phrase = "閔議員"
-            never_reach = uin.contain(test_phrase, test_target_word)  # Possibly is None object
+            never_reach = uin.utf_contain(test_phrase, test_target_word)  # Possibly is None object
 
         self.assertTrue("Target word's length should be smaller than the input" in str(nonsense_test.exception))
 

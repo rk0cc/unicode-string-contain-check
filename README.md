@@ -27,7 +27,7 @@ import UnicodeStringContainCheck as uin
 ```
 Check does the word contain in the phrase:
 ```python
-if uin.contain("遊戲保持了前作般的高自由度，玩家可以隨心所欲地進行","隨心所欲"):
+if uin.utf_contain("遊戲保持了前作般的高自由度，玩家可以隨心所欲地進行","隨心所欲"):
     print("It's contain!!!")
 ```
 The result wil be like this:
@@ -39,7 +39,7 @@ A python file should be looks like:
 import UnicodeStringContainCheck as uin
 
 if __name__ == "__main__":
-    if uin.contain("遊戲保持了前作般的高自由度，玩家可以隨心所欲地進行","隨心所欲"):
+    if uin.utf_contain("遊戲保持了前作般的高自由度，玩家可以隨心所欲地進行","隨心所欲"):
         print("It's contain!!!")
 ```
 
