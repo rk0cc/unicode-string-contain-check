@@ -1,10 +1,10 @@
 import setuptools
 
 with open("README.md", "r") as readme_file:
-    long_desc = readme_file
+    long_desc = readme_file.read()
 
 setuptools.setup(
-    name="unicode-string-contain-check",
+    name="UnicodeStringContainCheck",
     version="1.0.0",
     author="rk0cc",
     author_email="cyruschan1212@gmail.com",

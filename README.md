@@ -18,12 +18,12 @@ It should be fine for other language, otherwise, please create new issue to solv
 ## Usage
 Import this package first:
 ```python
-import unicode_in
+import UnicodeStringContainCheck
 ```
 Recommended ways:
 ```python
 # Name what you want
-import unicode_in as uin
+import UnicodeStringContainCheck as uin
 ```
 Check does the word contain in the phrase:
 ```python
@@ -36,7 +36,7 @@ It's contain!!!
 ```
 A python file should be looks like:
 ```python
-import unicode_in as uin
+import UnicodeStringContainCheck as uin
 
 if __name__ == "__main__":
     if uin.contain("遊戲保持了前作般的高自由度，玩家可以隨心所欲地進行","隨心所欲"):

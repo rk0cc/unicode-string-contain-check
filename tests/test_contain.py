@@ -1,6 +1,6 @@
 import unittest
 
-import unicode_in as uin
+import UnicodeStringContainCheck as uin
 
 
 class TestContain(unittest.TestCase):

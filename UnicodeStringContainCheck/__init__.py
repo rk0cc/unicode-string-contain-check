@@ -1,7 +1,7 @@
 from . import utf_iostream as utfio
 
 
-def contain(usr_input: str, target_text: str):
+def utf_contain(usr_input: str, target_text: str):
     '''
     Design for oriental text system that to find out does words contained in string
     :param usr_input: Input
